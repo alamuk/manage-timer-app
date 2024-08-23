@@ -79,3 +79,4 @@ function will run only once at the fist time when this component executed.
 
 ### .toFixed(2) 
 - meaning — will always be output a number with '2' decimal 
+
