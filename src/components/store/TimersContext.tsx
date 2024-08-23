@@ -23,17 +23,17 @@ type TimersContextValue = TimersState & {
 
 const TimersContext = createContext<TimersContextValue | null>(null);
 
+// useCustom hook//
 // eslint-disable-next-line react-refresh/only-export-components
 export function useTimersContext() {
   const timersCtx = useContext(TimersContext);
-
   if (timersCtx === null) {
     throw new Error('TimersContext is null - that should not be the case!');
   }
-
   return timersCtx;
 }
 
+//////
 type TimersContextProviderProps = {
   children: ReactNode;
 };
